@@ -1,0 +1,138 @@
+.body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #ebebeb;
+}
+
+.page {
+  display: grid;
+  background-color: #ebebeb;
+  grid-template-columns: 1fr 268px 802px 1fr;
+  grid-template-rows: 75px 1fr;
+}
+
+.top-left-corner {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  background-color: white;
+}
+
+.header {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  background-color: white;
+  display: flex;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1b1b1b;
+}
+.header .logo {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 180px;
+  padding-right: 20px;
+}
+.header .middle-menu {
+  margin-top: auto;
+  margin-bottom: auto;
+  font-weight: 600;
+}
+.header .middle-menu .item {
+  padding: 10px 15px 10px 15px;
+}
+.header .middle-menu .item:hover {
+  border-radius: 40px;
+  background-color: #eee;
+}
+.header .right-menu {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: 0;
+  font-weight: 600;
+}
+.header .right-menu .item {
+  padding: 10px 15px 10px 15px;
+}
+.header .right-menu .item:hover {
+  border-radius: 40px;
+  background-color: #47752d;
+}
+
+.top-right-corner {
+  grid-column-start: 4;
+  grid-row-start: 1;
+  background-color: white;
+}
+
+.left-placeholder {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  background-color: #ebebeb;
+}
+
+.lateral-bar {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-right: 20px;
+  font-weight: 600;
+  color: #1b1b1b;
+}
+.lateral-bar .first-item {
+  padding: 20px;
+  color: white;
+  background-color: #72ac51;
+}
+.lateral-bar .remaining-items {
+  padding: 20px;
+  background-color: white;
+}
+
+.articles {
+  grid-column-start: 3;
+  grid-row-start: 2;
+  display: flex;
+  flex-direction: column;
+  color: #1b1b1b;
+}
+.articles .about {
+  font-size: 36px;
+  padding: 40px;
+  color: #565656;
+  font-weight: 400;
+}
+.articles .items-container {
+  display: flex;
+}
+.articles .items-container .item {
+  background-color: white;
+  display: table;
+  margin-right: 20px;
+  width: 400px;
+}
+.articles .items-container .item .text-content {
+  margin: 30px;
+}
+.articles .items-container .item .text-content .title {
+  font-size: 20px;
+  font-weight: 600;
+}
+.articles .items-container .item .text-content .content {
+  padding-top: 20px;
+  font-size: 15px;
+  font-weight: 400;
+}
+.articles .items-container .item .image {
+  display: table-caption;
+  caption-side: bottom;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+/*# sourceMappingURL=output.css.map */
