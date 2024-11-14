@@ -11,16 +11,16 @@
 }
 
 .top-left-corner {
-    grid-column-start:1;
-    grid-column-end:3;
-    grid-row-start:1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
     background-color: white;
 }
 
 .header {
-    grid-column-start:2;
+    grid-column-start: 2;
     grid-column-end: 4;
-    grid-row-start:1;
+    grid-row-start: 1;
     background-color: white;
     display: flex;
     font-size: 14px;
@@ -30,7 +30,7 @@
     .logo {
         margin-top: auto;
         margin-bottom: auto;
-        width:180px;
+        width: 180px;
         padding-right: 20px;
     }
 
@@ -40,11 +40,11 @@
         font-weight: 600;
 
         .item {
-            padding:10px 15px 10px 15px;
+            padding: 10px 15px 10px 15px;
 
             &:hover {
                 border-radius: 40px;
-                background-color: #eee;
+                background-color: #ebebeb;
             }
         }
     }
@@ -53,11 +53,16 @@
         margin-top: auto;
         margin-bottom: auto;
         margin-left: auto;
-        margin-right:0;
+        margin-right: 0;
         font-weight: 600;
+        color: white;
 
         .item {
-            padding:10px 15px 10px 15px;
+            padding: 10px 30px 10px 30px;
+            margin-right: 0;
+            margin-left: 20px;
+            border-radius: 40px;
+            background-color: #72ac51;
 
             &:hover {
                 border-radius: 40px;
@@ -68,29 +73,29 @@
 }
 
 .top-right-corner {
-    grid-column-start:4;
-    grid-row-start:1;
-    background-color:white;
+    grid-column-start: 4;
+    grid-row-start: 1;
+    background-color: white;
 }
 
 .left-placeholder {
-    grid-column-start:1;
-    grid-row-start:2;
+    grid-column-start: 1;
+    grid-row-start: 2;
     background-color: #ebebeb;
 }
 
 .lateral-bar {
-    grid-column-start:2;
-    grid-row-start:2;
+    grid-column-start: 2;
+    grid-row-start: 2;
     font-size: 18px;
     margin-top: 20px;
-    margin-right: 20px;     
-    font-weight:600;
+    margin-right: 20px;
+    font-weight: 600;
     color: #1b1b1b;
 
     .first-item {
         padding: 20px;
-        color:white;
+        color: white;
         background-color: #72ac51;
     }
 
@@ -98,43 +103,48 @@
         padding: 20px;
         background-color: white;
     }
+
+    .separator {
+        height: 1px;
+        margin: 0 10px;
+    }
 }
 
 .articles {
-    grid-column-start:3;
-    grid-row-start:2;
+    grid-column-start: 3;
+    grid-row-start: 2;
     display: flex;
     flex-direction: column;
     color: #1b1b1b;
 
     .about {
-        font-size:36px;
-        padding:40px;
+        font-size: 36px;
+        padding: 40px;
         color: #565656;
-        font-weight:400;
+        font-weight: 400;
     }
 
     .items-container {
         display: flex;
 
-        .item { 
+        .item {
             background-color: white;
             display: table;
-            margin-right:20px;
+            margin-right: 20px;
             width: 400px;
-            
+
             .text-content {
                 margin: 30px;
-                
+
                 .title {
-                    font-size:20px;
-                    font-weight:600;
+                    font-size: 20px;
+                    font-weight: 600;
                 }
-        
+
                 .content {
                     padding-top: 20px;
-                    font-size:15px;
-                    font-weight:400;
+                    font-size: 15px;
+                    font-weight: 400;
                 }
             }
 
@@ -146,7 +156,144 @@
     }
 }
 
+.container {
+    background-color: white;
+    width: 570px;
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-title {
+    font-size: 32px;
+    margin-bottom: 67px;
+}
+
+.input-group {
+    width: 100%;
+    margin-bottom: 45px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.input-field:focus {
+    outline: 2px solid green;
+}
+
+.input-field:invalid {
+    outline: 2px solid red;
+}
+
+.login-button {
+    width: 100%;
+    padding: 15px;
+    font-size: 14px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 60px;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #45a049;
+}
+
 a {
     text-decoration: inherit;
     color: inherit;
+}
+
+/* Form Container */
+form {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 570px;
+    height: auto;
+    position: absolute;
+    left: 45%;
+    right: 55%;
+    top: 20%;
+    margin-top: -100px;/* half of you height */
+    margin-left: -200px; /* half of you width */
+    
+}
+
+/* Input Fields */
+input[type="email"],
+input[type="password"] {
+    width: 450px;
+    height: 45px;
+    margin-bottom: 45px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(127, 133, 127); /* Green outline when unfocused */
+    border-radius: 0px;  /* Set to 0 for sharp rectangular corners */
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+/* Styling for the h1 (Log in title) */
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 100;
+    text-align: left;
+    color: #1b1b1b;
+    margin-top: 67px;  /* Adjust spacing to match mockup */
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 15px;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: #72ac51;
+}
+
+/* Invalid states */
+input[type="email"]:focus:invalid,
+input[type="password"]:focus:invalid {
+    border-color: red; /* Red border when in focus and invalid */
+}
+
+
+
+/* Submit Button */
+button[type="submit"] {
+    width: 450px;
+    height: 42px;
+    background-color: #72ac51;
+    color: white;
+    border: none;
+    border-radius: 40px;  /* Rounded edges */
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 60px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+button[type="submit"]:hover {
+    background-color: #47752d;
 }
